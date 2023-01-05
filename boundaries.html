@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+</head>
+  <style>
+
+   body {
+       background: radial-gradient(rgb(252, 246, 115) 0%, rgb(253, 253, 250) 100%);
+    }
+    h1 {
+      text-align: center;
+      color: #1A2B3F;
+      font-family: Cambria, Cochin, Georgia, Times, serif;
+       text-shadow: 5px 5px 50px orange;
+       font-size: 48px;
+    }
+  
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 75%;
+      border-radius: 15px;
+    }
+    P, {
+      line-height: 1.5;
+      display: block;
+      margin: 0 auto;
+      padding: 20px;
+    color:#1A2B3F; 
+    font-size: 22px;
+    max-width: 75%;;
+    }
+    
+
+
+    button{
+        display: block;
+        margin: 20px auto;
+        color: white;
+        background: #1A2B3F;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px 20px;
+        border-style: solid white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px RGBA(0, 0, 0, 0.3);
+        transition: ease-in-out;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+
+        .container {
+            max-width: 100%;
+            max-height: 100%;
+            margin: 0 auto;
+            padding: 30px 60px;
+        
+        }
+        .read-more {
+            padding-top: 10px;
+            color: #1A2B3F;
+            text-decoration: none;
+                  display: block;
+      font-size: 22px;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .sign-up {
+           text-align: center;
+            font-weight: bold;
+        }        
+        .sign-up:hover {
+            text-decoration: underline;
+            color: #1A2B3F;
+            background: #E3C022;
+            cursor: pointer;
+        }
+
+        .tips {
+            text-align: center;
+            margin: 0 auto;
+        }
+      
+  </style>
+  </head>
+  <body>
+    <div  class="container">
+   <span><h1>Setting Personal Boundaries
+</h1></span> 
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/897/original/boundaries.jpg?1662759389"
+    />
+    <p><span>
+      Our time and energy are <strong>finite</strong> resources we need to complete our life
+      tasks and responsibilities. We need to protect these valuable,
+      <em>life-sustaining</em> assets by building and enforcing boundaries. 
+    </p>
+    <a
+      href="https://www.psychologytoday.com/us/blog/deeper-wellness/202205/5-steps-building-boundaries"
+      target="blank"
+      class="read-more"
+    >
+      Read about boundaries on Psychology today</a
+    >
+    </span>
+</br>
+    <button class="practice-button"> 💪 Let's Practice</button>
+</br>
+
+ </div>
+ <script>
+    function practice() {
+    let name = prompt("What is your name?");
+    let permission = prompt("If Someone asks you to do something you don't want to do - what do you say?");
+
+     if (permission === "no") 
+     alert("Thanks, " + name + "! Great job! Saying no is a powerful way to set a healthy boundary. Check out our website for more tips on setting healthy boundaries.");
+     
+     else 
+        alert("Hey, " + name + "! Remember you can always say no when you don't want to do something. It's a simple and powerful way to free yourself from the expectations of others.");
+    }
+
+let practiceButton = document.querySelector(".practice-button");
+    practiceButton.addEventListener("click", practice);
+
+
+ </script>
+</body>
+</html>
