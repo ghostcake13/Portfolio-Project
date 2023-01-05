@@ -135,10 +135,11 @@ nav li.active a {
 }
 
 footer .contact-box {
+  text-align: center;
   background-color: var(--secondary-color);
-  padding: 30px 120px;
+  padding: 30px 60px;
   border-radius: 10px;
-  margin: 5px;
+  margin: 8px;
 }
 
 footer .contact-box p {
@@ -189,11 +190,11 @@ footer .social-links a:hover {
   .content-container {
     text-align: center;
     padding: 0;
+  }
 
-    nav a {
-      font-size: 14px;
-      margin: 5px;
-    }
+  nav a {
+    font-size: 14px;
+    margin: 5px;
   }
 
   footer .contact-box {
